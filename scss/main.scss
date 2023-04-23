@@ -1,0 +1,16 @@
+@import "var.scss";
+@import "header.scss";
+@import "home.scss";
+@import "subbar.scss";
+@import "about.scss";
+@import "booking.scss";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}

@@ -1,0 +1,23 @@
+.subscribeHeader {
+  padding: 1.5rem 2.1rem;
+  background-color: #304149;
+  text-align: center;
+  input {
+    padding: 0.5rem 2px;
+    width: 200px;
+    outline: none;
+  }
+  button {
+    background-color: #dd5024;
+    padding: 0.4rem 1rem;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+  }
+  p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 1rem 0;
+  }
+}
