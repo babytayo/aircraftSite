@@ -1,1 +1,88 @@
-/*# sourceMappingURL=main.css.map */
+header {
+  background: #304149;
+  border-bottom: 7px solid #dd5024;
+}
+header .main_header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem;
+}
+header .main_header h1 {
+  color: #fff;
+}
+header .main_header h1 span {
+  color: #dd5024;
+}
+header nav ul {
+  list-style-type: none;
+  display: none;
+  text-align: center;
+  padding: 1rem 0;
+  color: #fff;
+}
+header nav ul li {
+  padding: 0.5rem 1rem;
+}
+
+.aircraftSection {
+  background: url("/image/aircraft.jpg");
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+}
+
+.homeArticle {
+  width: 100%;
+  padding: 1rem;
+}
+.homeArticle .homearticleChildren {
+  margin-bottom: 2rem;
+  text-align: center;
+  width: inherit;
+}
+.homeArticle .homearticleChildren img {
+  width: inherit;
+}
+.homeArticle .homearticleChildren p {
+  color: #232c43;
+}
+
+.subscribeHeader {
+  padding: 1.5rem 2.1rem;
+  background-color: #304149;
+  text-align: center;
+}
+.subscribeHeader input {
+  padding: 0.5rem 2px;
+  width: 200px;
+  outline: none;
+}
+.subscribeHeader button {
+  background-color: #dd5024;
+  padding: 0.4rem 1rem;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+}
+.subscribeHeader p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}/*# sourceMappingURL=main.css.map */
