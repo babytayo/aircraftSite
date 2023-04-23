@@ -30,7 +30,7 @@ header nav ul li {
 }
 
 .aircraftSection {
-  background: url("/image/aircraft.jpg");
+  background: url("./image/aircraft.jpg");
   background-repeat: no-repeat;
   height: 300px;
   width: 100%;
