@@ -31,7 +31,7 @@ header nav ul li {
 
 .aircraft {
   display: block;
-  background: url(../../image/aircraft.jpg);
+  background: url(../image/aircraft.jpg);
   background-repeat: no-repeat;
   width: 100%;
   height: 400px;
@@ -76,6 +76,13 @@ header nav ul li {
   font-size: 20px;
   font-weight: 400;
   margin: 1rem 0;
+}
+
+footer {
+  width: 100%;
+  height: 10rem;
+  background-color: #dd5024;
+  margin-bottom: 2rem;
 }
 
 * {
