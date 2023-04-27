@@ -1,23 +1,62 @@
 .subscribeHeader {
-  padding: 1.5rem 2.1rem;
+  padding: 1.5rem 0;
   background-color: #304149;
   text-align: center;
-  input {
-    padding: 0.5rem 2px;
-    width: 200px;
-    outline: none;
-  }
-  button {
-    background-color: #dd5024;
-    padding: 0.4rem 1rem;
-    color: #fff;
-    border: none;
-    font-size: 18px;
-  }
   p {
     color: #fff;
     font-size: 20px;
     font-weight: 400;
     margin: 1rem 0;
+  }
+  fieldset {
+    display: flex;
+    border: none;
+    justify-content: center;
+    input {
+      padding: 0.5rem 2px;
+      width: 250px;
+      outline: none;
+    }
+    button {
+      background-color: #dd5024;
+      padding: 0.4rem 1rem;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+    }
+  }
+}
+
+//Desktop Responsive
+@media (min-width: 577px) {
+  .subscribeHeader {
+    padding: 1.5rem 10rem;
+    background-color: #304149;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+
+    p {
+      color: #fff;
+      font-size: 25px;
+      font-weight: 400;
+      margin: 1rem 0;
+    }
+    fieldset {
+      display: flex;
+      border: none;
+      input {
+        padding: 0.5rem 2px;
+        width: 350px;
+        outline: none;
+      }
+      button {
+        background-color: #dd5024;
+        padding: 0.4rem 1rem;
+        color: #fff;
+        border: none;
+        font-size: 18px;
+      }
+    }
   }
 }

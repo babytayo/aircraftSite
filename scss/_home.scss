@@ -1,10 +1,25 @@
 .aircraft {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: url(../image/aircraft.jpg);
   background-repeat: no-repeat;
   width: 100%;
   height: 400px;
   background-repeat: no-repeat;
+  color: #f3eae3;
+  text-align: center;
+  padding: 0 1rem;
+  .leadPara {
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 3rem;
+  }
+  .belowpara {
+    font-size: 18px;
+    font-size: 14px;
+  }
 }
 
 .homeArticle {
@@ -14,11 +29,58 @@
     margin-bottom: 2rem;
     text-align: center;
     width: 100%;
+    color: #2c3034;
     img {
-      width: 100%;
+      width: 90%;
     }
-    p {
-      color: #232c43;
+  }
+}
+
+//Desktop Responsive
+@media (min-width: 577px) {
+  .aircraft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../image/aircraft.jpg);
+    background-repeat: no-repeat;
+    width: 100% 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #f3eae3;
+    text-align: center;
+    padding: 0 10rem;
+    .leadPara {
+      font-size: 40px;
+      font-weight: 500;
+      margin-bottom: 4rem;
+    }
+    .belowPara {
+      font-size: 22px;
+    }
+  }
+}
+
+//Desktop Responsive
+@media (min-width: 577px) {
+  .homeArticle {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    .homearticleChildren {
+      margin-bottom: 2rem;
+      text-align: center;
+      width: 30%;
+      img {
+        width: 100%;
+        height: 20rem;
+      }
+      p {
+        color: #232c43;
+      }
     }
   }
 }

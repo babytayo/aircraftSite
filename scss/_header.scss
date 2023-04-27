@@ -29,3 +29,45 @@ header {
     }
   }
 }
+
+//Desktop Responsive
+@media (min-width: 577px) {
+  header {
+    background: $header_background;
+    display: flex;
+    padding: 0 15rem;
+    align-items: center;
+    border-bottom: 7px solid #dd5024;
+
+    .main_header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem;
+      h1 {
+        color: #fff;
+        span {
+          color: $spanColor;
+        }
+      }
+      #image {
+        display: none;
+      }
+    }
+
+    nav {
+      ul {
+        list-style-type: none;
+        display: flex;
+        text-align: center;
+        padding: 0.5rem 0;
+        color: #fff;
+        li {
+          padding: 1rem 2rem;
+          border-radius: 10px;
+          margin: 0 1rem;
+        }
+      }
+    }
+  }
+}

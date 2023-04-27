@@ -29,13 +29,83 @@ header nav ul li {
   padding: 1rem 0;
 }
 
+@media (min-width: 577px) {
+  header {
+    background: #304149;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 15rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 7px solid #dd5024;
+  }
+  header .main_header {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2rem;
+  }
+  header .main_header h1 {
+    color: #fff;
+  }
+  header .main_header h1 span {
+    color: #dd5024;
+  }
+  header .main_header #image {
+    display: none;
+  }
+  header nav ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    padding: 0.5rem 0;
+    color: #fff;
+  }
+  header nav ul li {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin: 0 1rem;
+  }
+}
 .aircraft {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: url(../image/aircraft.jpg);
   background-repeat: no-repeat;
   width: 100%;
   height: 400px;
   background-repeat: no-repeat;
+  color: #f3eae3;
+  text-align: center;
+  padding: 0 1rem;
+}
+.aircraft .leadPara {
+  font-size: 23px;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+.aircraft .belowpara {
+  font-size: 18px;
+  font-size: 14px;
 }
 
 .homeArticle {
@@ -46,30 +116,73 @@ header nav ul li {
   margin-bottom: 2rem;
   text-align: center;
   width: 100%;
+  color: #2c3034;
 }
 .homeArticle .homearticleChildren img {
-  width: 100%;
-}
-.homeArticle .homearticleChildren p {
-  color: #232c43;
+  width: 90%;
 }
 
+@media (min-width: 577px) {
+  .aircraft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: url(../image/aircraft.jpg);
+    background-repeat: no-repeat;
+    width: 100% 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #f3eae3;
+    text-align: center;
+    padding: 0 10rem;
+  }
+  .aircraft .leadPara {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 4rem;
+  }
+  .aircraft .belowPara {
+    font-size: 22px;
+  }
+}
+@media (min-width: 577px) {
+  .homeArticle {
+    width: 100%;
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .homeArticle .homearticleChildren {
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 30%;
+  }
+  .homeArticle .homearticleChildren img {
+    width: 100%;
+    height: 20rem;
+  }
+  .homeArticle .homearticleChildren p {
+    color: #232c43;
+  }
+}
 .subscribeHeader {
-  padding: 1.5rem 2.1rem;
+  padding: 1.5rem 0;
   background-color: #304149;
   text-align: center;
-}
-.subscribeHeader input {
-  padding: 0.5rem 2px;
-  width: 200px;
-  outline: none;
-}
-.subscribeHeader button {
-  background-color: #dd5024;
-  padding: 0.4rem 1rem;
-  color: #fff;
-  border: none;
-  font-size: 18px;
 }
 .subscribeHeader p {
   color: #fff;
@@ -77,14 +190,103 @@ header nav ul li {
   font-weight: 400;
   margin: 1rem 0;
 }
+.subscribeHeader fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.subscribeHeader fieldset input {
+  padding: 0.5rem 2px;
+  width: 250px;
+  outline: none;
+}
+.subscribeHeader fieldset button {
+  background-color: #dd5024;
+  padding: 0.4rem 1rem;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+}
+
+@media (min-width: 577px) {
+  .subscribeHeader {
+    padding: 1.5rem 10rem;
+    background-color: #304149;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .subscribeHeader p {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 1rem 0;
+  }
+  .subscribeHeader fieldset {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: none;
+  }
+  .subscribeHeader fieldset input {
+    padding: 0.5rem 2px;
+    width: 350px;
+    outline: none;
+  }
+  .subscribeHeader fieldset button {
+    background-color: #dd5024;
+    padding: 0.4rem 1rem;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+  }
+}
+.aboutUs {
+  width: 100%;
+  height: 90vh;
+  padding: 2rem 10rem;
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.aboutUs .aboutChildren {
+  width: 50%;
+  padding: 0 5rem;
+  font-size: 18px;
+}
 
 footer {
   width: 100%;
   height: 10rem;
+  font-size: 15px;
+  font-weight: 400;
   background-color: #dd5024;
   margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #f6f6ec;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
+@media (min-width: 577px) {
+  footer {
+    font-size: 20px;
+  }
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
