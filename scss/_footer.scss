@@ -14,12 +14,18 @@ footer {
     text-decoration: none;
     margin-top: 1rem;
     color: #f6f6ec;
+    display: flex;
+    align-items: center;
   }
   a:hover {
     color: goldenrod;
   }
   a:active {
     color: goldenrod;
+  }
+
+  img {
+    width: 25px;
   }
 }
 

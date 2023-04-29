@@ -526,12 +526,21 @@ footer a {
   text-decoration: none;
   margin-top: 1rem;
   color: #f6f6ec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 footer a:hover {
   color: goldenrod;
 }
 footer a:active {
   color: goldenrod;
+}
+footer img {
+  width: 25px;
 }
 
 @media (min-width: 577px) {
