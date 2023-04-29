@@ -42,6 +42,7 @@ header {
   header {
     background: $header_background;
     display: flex;
+    flex-direction: row;
     padding: 0 15rem;
     align-items: center;
 
