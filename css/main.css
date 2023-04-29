@@ -558,6 +558,9 @@ footer img {
   a:active {
     color: goldenrod;
   }
+  img {
+    width: 25px;
+  }
 }
 * {
   -webkit-box-sizing: border-box;
