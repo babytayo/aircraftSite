@@ -45,7 +45,7 @@
             obcaecati quas adipisci deserunt sequi. Tenetur, commodi deleniti
             repellat odio nostrum necessitatibus id nam.
           </p>
-          <p class="price">Pricing= $500 - $1000</p>
+          <p class="price">Pricing= $500 - $1,000</p>
         </div>
         <div class="childOneChildren">
           <h3>First-Class Suite</h3>
@@ -55,7 +55,7 @@
             sequi placeat quasi eaque repudiandae similique dignissimos, veniam
             animi! Quam.
           </p>
-          <p class="price">Pricing= $4000 - $5000</p>
+          <p class="price">Pricing= $4,000 - $5,000</p>
         </div>
         <div class="childOneChildren">
           <h3>Business Suite</h3>
@@ -65,7 +65,7 @@
             nemo delectus sit perspiciatis. Ratione dignissimos facere corporis
             accusamus et tenetur earum.
           </p>
-          <p class="price">Pricing= $1,500 - $3000</p>
+          <p class="price">Pricing= $1,500 - $3,000</p>
         </div>
       </div>
       <div class="bookingChildTwo">
@@ -82,12 +82,15 @@
               placeholder="Enter Email..."
               required
           /></label>
-          <p>Choose Your Suite</p>
-          <select name="choose" id="">
-            <option value="">Economic Ticket</option>
-            <option value="">First class Ticket</option>
-            <option value="">Business Ticket</option>
-          </select>
+          <label for="bookingOption">
+            <p>Choose Your Suite</p>
+            <select name="bookingOption" id="bookingOption">
+              <option value="economic">Economic Ticket</option>
+              <option value="first-class">First-Class Ticket</option>
+              <option value="business">Business Ticket</option>
+            </select>
+          </label>
+
           <br />
           <button type="submit">Book</button>
         </form>

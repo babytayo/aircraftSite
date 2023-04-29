@@ -73,6 +73,7 @@ header nav ul li:after {
     padding: 1rem 2rem;
     border-radius: 10px;
     margin: 0 1rem;
+    cursor: pointer;
   }
   header nav ul li:hover,
   header nav ul li:active,
@@ -254,6 +255,11 @@ header nav ul li:after {
     color: #fff;
     border: none;
     font-size: 18px;
+    cursor: pointer;
+  }
+  .subscribeHeader fieldset button:hover {
+    opacity: 0.9;
+    background-color: rgb(241, 103, 37);
   }
 }
 .aboutUs {
@@ -407,6 +413,11 @@ header nav ul li:after {
   margin-top: 1rem;
   color: #fff;
   font-size: 16px;
+  cursor: pointer;
+}
+.booking .bookingChildTwo form button:hover {
+  opacity: 0.9;
+  background-color: rgb(241, 103, 37);
 }
 
 @media (min-width: 577px) {
@@ -499,6 +510,10 @@ header nav ul li:after {
     margin-top: 1rem;
     color: #fff;
     font-size: 16px;
+  }
+  .booking .bookingChildTwo form button:hover {
+    opacity: 0.9;
+    background-color: rgb(241, 103, 37);
   }
 }
 footer {
