@@ -28,4 +28,15 @@ footer {
   footer {
     font-size: 20px;
   }
+  a {
+    text-decoration: none;
+    margin-top: 1rem;
+    color: #f6f6ec;
+  }
+  a:hover {
+    color: goldenrod;
+  }
+  a:active {
+    color: goldenrod;
+  }
 }
