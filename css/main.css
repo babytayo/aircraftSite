@@ -251,7 +251,7 @@ header nav ul li:after {
     color: #232c43;
   }
 }
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 769px) {
   .aircraft {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -288,7 +288,7 @@ header nav ul li:after {
     font-size: 17px;
   }
 }
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 769px) {
   .homeArticle {
     width: 100%;
     padding: 0.3rem;
