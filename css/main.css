@@ -19,6 +19,9 @@ header .main_header h1 {
 header .main_header h1 span {
   color: #dd5024;
 }
+header .main_header #image {
+  width: 35px;
+}
 header nav ul {
   list-style-type: none;
   display: none;
@@ -29,6 +32,7 @@ header nav ul {
 header nav ul li {
   padding: 1rem 0;
   width: 100%;
+  font-size: 13px;
 }
 header nav ul li:hover,
 header nav ul li:active,
@@ -37,7 +41,7 @@ header nav ul li:after {
   background-color: rgba(255, 255, 255, 0.04);
 }
 
-@media (min-width: 577px) {
+@media (min-width: 767px) {
   header {
     background: #304149;
     display: -webkit-box;
@@ -78,6 +82,58 @@ header nav ul li:after {
     border-radius: 10px;
     margin: 0 1rem;
     cursor: pointer;
+    font-size: 18px;
+  }
+  header nav ul li:hover,
+  header nav ul li:active,
+  header nav ul li:after {
+    opacity: 0.6;
+    background-color: rgba(255, 255, 255, 0.04);
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  header {
+    width: 100%;
+    background: #304149;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0 5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .main_header {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2rem 0;
+  }
+  header .main_header #image {
+    display: none;
+  }
+  header nav ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+  header nav ul li {
+    padding: 0.5rem 0.8rem;
+    border-radius: 10px;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    font-size: 15px;
   }
   header nav ul li:hover,
   header nav ul li:active,
@@ -127,12 +183,12 @@ header nav ul li:after {
 }
 .homeArticle .homearticleChildren {
   margin-bottom: 2rem;
-  text-align: center;
+  text-align: justify;
   width: 100%;
   color: #2c3034;
 }
 .homeArticle .homearticleChildren img {
-  width: 90%;
+  width: 100%;
 }
 
 @media (min-width: 577px) {
@@ -183,7 +239,7 @@ header nav ul li:after {
   }
   .homeArticle .homearticleChildren {
     margin-bottom: 2rem;
-    text-align: center;
+    text-align: justify;
     width: 30%;
   }
   .homeArticle .homearticleChildren img {
@@ -191,7 +247,69 @@ header nav ul li:after {
     height: 20rem;
   }
   .homeArticle .homearticleChildren p {
+    font-size: 20px;
     color: #232c43;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .aircraft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(../image/aircraft.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%), url(../image/aircraft.jpg);
+    background-repeat: no-repeat;
+    width: 100% 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #f3eae3;
+    text-align: center;
+    padding: 0 1rem;
+    color: goldenrod;
+  }
+  .aircraft .leadPara {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    font-size: 25px;
+  }
+  .aircraft .belowPara {
+    font-size: 17px;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .homeArticle {
+    width: 100%;
+    padding: 0.3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .homeArticle .homearticleChildren {
+    margin-bottom: 2rem;
+    text-align: justify;
+    width: 30%;
+  }
+  .homeArticle .homearticleChildren img {
+    width: 100%;
+    height: 11rem;
+  }
+  .homeArticle .homearticleChildren p {
+    color: #232c43;
+    font-size: 14px;
   }
 }
 .subscribeHeader {
@@ -213,6 +331,8 @@ header nav ul li:after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 2.8rem;
+  font-size: 18px;
 }
 .subscribeHeader fieldset input {
   padding: 0.5rem 2px;
@@ -229,7 +349,7 @@ header nav ul li:after {
 
 @media (min-width: 577px) {
   .subscribeHeader {
-    padding: 1.5rem 10rem;
+    padding: 3rem 10rem;
     background-color: #304149;
     text-align: center;
     display: -webkit-box;
@@ -249,11 +369,56 @@ header nav ul li:after {
     display: -ms-flexbox;
     display: flex;
     border: none;
+    height: 3rem;
   }
   .subscribeHeader fieldset input {
     padding: 0.5rem 2px;
     width: 350px;
     outline: none;
+    font-size: 19px;
+  }
+  .subscribeHeader fieldset button {
+    background-color: #dd5024;
+    padding: 0.4rem 1rem;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .subscribeHeader fieldset button:hover {
+    opacity: 0.9;
+    background-color: rgb(241, 103, 37);
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .subscribeHeader {
+    padding: 1.5rem 3rem;
+    background-color: #304149;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .subscribeHeader p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 1rem 0;
+  }
+  .subscribeHeader fieldset {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: none;
+    height: 3rem;
+  }
+  .subscribeHeader fieldset input {
+    padding: 0.5rem 2px;
+    width: 250px;
+    outline: none;
+    font-size: 16px;
   }
   .subscribeHeader fieldset button {
     background-color: #dd5024;
@@ -315,9 +480,46 @@ header nav ul li:after {
   .aboutUs .aboutChildren {
     width: 40%;
     padding: 1rem 0;
-    font-size: 17px;
+    font-size: 18px;
     text-align: justify;
     line-height: 2rem;
+  }
+  .aboutUs .aboutChildren .aboutheading {
+    color: deeppink;
+  }
+  .aboutUs .separateBG {
+    background-color: #232c43;
+    color: #fff;
+    padding: 1rem;
+  }
+  .aboutUs .aboutChildren11 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .aboutUs {
+    background-color: #f2f2f2;
+    width: 100%;
+    padding: 0.5rem 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .aboutUs .aboutChildren {
+    width: 47%;
+    padding: 1rem 0;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.5rem;
   }
   .aboutUs .aboutChildren .aboutheading {
     color: deeppink;
@@ -398,7 +600,7 @@ header nav ul li:after {
 }
 .booking .bookingChildTwo form label input {
   width: 100%;
-  padding: 1rem 0;
+  padding: 1rem 0.2rem;
   margin-bottom: 1rem;
   outline: none;
   font-size: 18px;
@@ -459,6 +661,103 @@ header nav ul li:after {
     height: fit-content;
     margin: 1rem 0;
     color: #304149;
+    font-size: 18px;
+    line-height: 1.5rem;
+  }
+  .booking .bookingChildOne .childOneChildren h3 {
+    padding: 3rem 0;
+  }
+  .booking .bookingChildOne .childOneChildren p {
+    line-height: 1.5rem;
+    word-spacing: 3px;
+    text-align: justify;
+  }
+  .booking .bookingChildOne .childOneChildren .price {
+    margin-top: 2rem;
+  }
+  .booking .bookingChildTwo {
+    width: 45%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1rem;
+  }
+  .booking .bookingChildTwo form {
+    background-color: #304149;
+    padding: 4rem 1rem;
+    color: #fff;
+  }
+  .booking .bookingChildTwo form h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  .booking .bookingChildTwo form label {
+    font-size: 22px;
+    color: #fff;
+    margin: 3rem 0;
+    padding: 5rem 0;
+  }
+  .booking .bookingChildTwo form label input {
+    padding: 1rem 0.2rem;
+    margin-bottom: 1rem;
+    outline: none;
+    font-size: 18px;
+  }
+  .booking .bookingChildTwo form p {
+    font-size: 25px;
+    margin: 1rem 0;
+  }
+  .booking .bookingChildTwo form select {
+    width: 10rem;
+    height: 2rem;
+    font-size: 16px;
+  }
+  .booking .bookingChildTwo form button {
+    background-color: #dd5024;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    margin-top: 1rem;
+    color: #fff;
+    font-size: 16px;
+  }
+  .booking .bookingChildTwo form button:hover {
+    opacity: 0.9;
+    background-color: rgb(241, 103, 37);
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .booking {
+    background-color: #f2f2f2;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0 1rem;
+  }
+  .booking .bookingChildOne {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding: 1rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .booking .bookingChildOne h2 {
+    color: deeppink;
+  }
+  .booking .bookingChildOne .childOneChildren {
+    background-color: #e6e6e6;
+    max-width: 100%;
+    padding: 1rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 1rem 0;
+    color: #304149;
     font-size: 16px;
   }
   .booking .bookingChildOne .childOneChildren h3 {
@@ -489,23 +788,23 @@ header nav ul li:after {
     margin-bottom: 1rem;
   }
   .booking .bookingChildTwo form label {
-    font-size: 22px;
+    font-size: 20px;
     color: #fff;
     margin: 3rem 0;
     padding: 5rem 0;
   }
   .booking .bookingChildTwo form label input {
-    padding: 1rem 0;
+    padding: 1rem 0.2rem;
     margin-bottom: 1rem;
     outline: none;
-    font-size: 18px;
+    font-size: 16px;
   }
   .booking .bookingChildTwo form p {
-    font-size: 25px;
+    font-size: 17px;
     margin: 1rem 0;
   }
   .booking .bookingChildTwo form select {
-    width: 10rem;
+    width: 9rem;
     height: 2rem;
     font-size: 16px;
   }

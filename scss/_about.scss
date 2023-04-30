@@ -36,9 +36,41 @@
     .aboutChildren {
       width: 40%;
       padding: 1rem 0;
-      font-size: 17px;
+      font-size: 18px;
       text-align: justify;
       line-height: 2rem;
+      .aboutheading {
+        color: deeppink;
+      }
+    }
+
+    .separateBG {
+      background-color: #232c43;
+      color: #fff;
+      padding: 1rem;
+    }
+    .aboutChildren11 {
+      height: fit-content;
+    }
+  }
+}
+
+//Tablet Responsive
+@media (min-width: 577px) and (max-width: 768px) {
+  .aboutUs {
+    background-color: #f2f2f2;
+    width: 100%;
+    padding: 0.5rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .aboutChildren {
+      width: 47%;
+      padding: 1rem 0;
+      font-size: 15px;
+      text-align: justify;
+      line-height: 1.5rem;
       .aboutheading {
         color: deeppink;
       }
