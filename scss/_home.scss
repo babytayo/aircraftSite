@@ -38,8 +38,8 @@
   }
 }
 
-//Desktop Responsive
-@media (min-width: 577px) {
+//Laptop Responsive
+@media (min-width: 769px) {
   .aircraft {
     display: flex;
     flex-direction: column;
@@ -68,8 +68,8 @@
   }
 }
 
-//Desktop Responsive
-@media (min-width: 577px) {
+//Laptop Responsive
+@media (min-width: 769px) {
   .homeArticle {
     width: 100%;
     padding: 1rem;

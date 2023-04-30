@@ -41,7 +41,7 @@ header nav ul li:after {
   background-color: rgba(255, 255, 255, 0.04);
 }
 
-@media (min-width: 767px) {
+@media (min-width: 769px) {
   header {
     background: #304149;
     display: -webkit-box;
@@ -51,7 +51,7 @@ header nav ul li:after {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 0 15rem;
+    padding: 0 13rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -191,7 +191,7 @@ header nav ul li:after {
   width: 100%;
 }
 
-@media (min-width: 577px) {
+@media (min-width: 769px) {
   .aircraft {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -227,7 +227,7 @@ header nav ul li:after {
     font-size: 22px;
   }
 }
-@media (min-width: 577px) {
+@media (min-width: 769px) {
   .homeArticle {
     width: 100%;
     padding: 1rem;
@@ -347,7 +347,7 @@ header nav ul li:after {
   font-size: 16px;
 }
 
-@media (min-width: 577px) {
+@media (min-width: 769px) {
   .subscribeHeader {
     padding: 3rem 10rem;
     background-color: #304149;
@@ -628,7 +628,7 @@ header nav ul li:after {
   background-color: rgb(241, 103, 37);
 }
 
-@media (min-width: 577px) {
+@media (min-width: 769px) {
   .booking {
     background-color: #f2f2f2;
     width: 100%;
@@ -639,7 +639,7 @@ header nav ul li:after {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 0 15rem;
+    padding: 0 10rem;
   }
   .booking .bookingChildOne {
     -ms-flex-preferred-size: 50%;
@@ -725,7 +725,7 @@ header nav ul li:after {
     background-color: rgb(241, 103, 37);
   }
 }
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 769px) {
   .booking {
     background-color: #f2f2f2;
     width: 100%;
@@ -864,7 +864,7 @@ footer img {
   width: 25px;
 }
 
-@media (min-width: 577px) {
+@media (min-width: 579px) {
   footer {
     font-size: 20px;
   }

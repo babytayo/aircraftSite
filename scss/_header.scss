@@ -42,12 +42,12 @@ header {
 }
 
 //Laptop Responsive
-@media (min-width: 767px) {
+@media (min-width: 769px) {
   header {
     background: $header_background;
     display: flex;
     flex-direction: row;
-    padding: 0 15rem;
+    padding: 0 13rem;
     align-items: center;
 
     .main_header {
