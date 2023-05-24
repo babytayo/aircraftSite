@@ -480,9 +480,6 @@ header nav ul li:after {
   text-align: justify;
   line-height: 1.5rem;
 }
-.aboutUs .aboutChildren .firstPara {
-  padding: 1rem;
-}
 .aboutUs .aboutChildren .aboutheading {
   color: deeppink;
 }
@@ -552,9 +549,6 @@ header nav ul li:after {
     font-size: 15px;
     text-align: justify;
     line-height: 1.5rem;
-  }
-  .aboutUs .aboutChildren .firstPara {
-    padding: 1rem;
   }
   .aboutUs .aboutChildren .aboutheading {
     color: deeppink;
