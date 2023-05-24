@@ -1,7 +1,7 @@
 .aboutUs {
   width: 100%;
   background-color: #f2f2f2;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
   .aboutChildren {
@@ -10,7 +10,9 @@
     font-size: 15px;
     text-align: justify;
     line-height: 1.5rem;
-    // color: ;
+    .firstPara {
+      padding: 1rem;
+    }
     .aboutheading {
       color: deeppink;
     }
@@ -23,18 +25,20 @@
   }
 }
 
-//Desktop Responsive
-@media (min-width: 577px) {
+//laptop Responsive
+@media (min-width: 769px) {
   .aboutUs {
     background-color: #f2f2f2;
     width: 100%;
-    padding: 0.5rem 15rem;
+    padding: 0.5rem 1rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 2rem;
+    flex-direction: center;
+    justify-content: center;
 
     .aboutChildren {
-      width: 40%;
+      width: 35rem;
       padding: 1rem 0;
       font-size: 18px;
       text-align: justify;
@@ -60,17 +64,21 @@
   .aboutUs {
     background-color: #f2f2f2;
     width: 100%;
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 1rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 1rem;
+    // align-items: center;
 
     .aboutChildren {
-      width: 47%;
+      width: 30rem;
       padding: 1rem 0;
       font-size: 15px;
       text-align: justify;
       line-height: 1.5rem;
+      .firstPara {
+        padding: 1rem;
+      }
       .aboutheading {
         color: deeppink;
       }

@@ -15,6 +15,7 @@ header .main_header {
 }
 header .main_header h1 {
   color: #fff;
+  font-size: 23px;
 }
 header .main_header h1 span {
   color: #dd5024;
@@ -51,20 +52,23 @@ header nav ul li:after {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 0 13rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  header .main_header {
-    max-width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 2rem;
+  }
+  header .main_header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  header .main_header h1 {
+    font-size: 30px;
   }
   header .main_header #image {
     display: none;
@@ -102,7 +106,7 @@ header nav ul li:after {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 0 5rem;
+    padding: 0 1.5rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -116,6 +120,9 @@ header nav ul li:after {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 2rem 0;
+  }
+  header .main_header h1 {
+    font-size: 25px;
   }
   header .main_header #image {
     display: none;
@@ -291,21 +298,29 @@ header nav ul li:after {
 @media (min-width: 577px) and (max-width: 769px) {
   .homeArticle {
     width: 100%;
-    padding: 0.3rem;
+    padding: 2rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .homeArticle .homearticleChildren {
     margin-bottom: 2rem;
     text-align: justify;
-    width: 30%;
+    width: 80%;
   }
   .homeArticle .homearticleChildren img {
     width: 100%;
-    height: 11rem;
+    height: 16rem;
   }
   .homeArticle .homearticleChildren p {
     color: #232c43;
@@ -347,22 +362,30 @@ header nav ul li:after {
   font-size: 16px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 577px) and (min-width: 769px) {
   .subscribeHeader {
-    padding: 3rem 10rem;
+    padding: 3rem 0;
     background-color: #304149;
     text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    gap: 4rem;
   }
   .subscribeHeader p {
     color: #fff;
     font-size: 25px;
     font-weight: 400;
-    margin: 1rem 0;
+    height: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .subscribeHeader fieldset {
     display: -webkit-box;
@@ -392,18 +415,23 @@ header nav ul li:after {
 }
 @media (min-width: 577px) and (max-width: 768px) {
   .subscribeHeader {
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 1.5rem;
     background-color: #304149;
-    text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
   }
   .subscribeHeader p {
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     margin: 1rem 0;
   }
@@ -436,7 +464,7 @@ header nav ul li:after {
 .aboutUs {
   width: 100%;
   background-color: #f2f2f2;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -452,6 +480,9 @@ header nav ul li:after {
   text-align: justify;
   line-height: 1.5rem;
 }
+.aboutUs .aboutChildren .firstPara {
+  padding: 1rem;
+}
 .aboutUs .aboutChildren .aboutheading {
   color: deeppink;
 }
@@ -461,11 +492,11 @@ header nav ul li:after {
   padding: 1rem;
 }
 
-@media (min-width: 577px) {
+@media (min-width: 769px) {
   .aboutUs {
     background-color: #f2f2f2;
     width: 100%;
-    padding: 0.5rem 15rem;
+    padding: 0.5rem 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -473,12 +504,15 @@ header nav ul li:after {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    gap: 2rem;
+    -ms-flex-direction: center;
+        flex-direction: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .aboutUs .aboutChildren {
-    width: 40%;
+    width: 35rem;
     padding: 1rem 0;
     font-size: 18px;
     text-align: justify;
@@ -502,7 +536,7 @@ header nav ul li:after {
   .aboutUs {
     background-color: #f2f2f2;
     width: 100%;
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -510,16 +544,17 @@ header nav ul li:after {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    gap: 1rem;
   }
   .aboutUs .aboutChildren {
-    width: 47%;
+    width: 30rem;
     padding: 1rem 0;
     font-size: 15px;
     text-align: justify;
     line-height: 1.5rem;
+  }
+  .aboutUs .aboutChildren .firstPara {
+    padding: 1rem;
   }
   .aboutUs .aboutChildren .aboutheading {
     color: deeppink;
@@ -639,15 +674,16 @@ header nav ul li:after {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 0 10rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .booking .bookingChildOne {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
     padding: 1rem;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    width: 40rem;
   }
   .booking .bookingChildOne h2 {
     color: deeppink;
@@ -676,7 +712,7 @@ header nav ul li:after {
     margin-top: 2rem;
   }
   .booking .bookingChildTwo {
-    width: 45%;
+    width: 35rem;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -736,7 +772,7 @@ header nav ul li:after {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 0 1rem;
+    padding: 0 0.1rem;
   }
   .booking .bookingChildOne {
     -ms-flex-preferred-size: 50%;
@@ -780,7 +816,7 @@ header nav ul li:after {
   }
   .booking .bookingChildTwo form {
     background-color: #304149;
-    padding: 4rem 1rem;
+    padding: 3rem 1rem;
     color: #fff;
   }
   .booking .bookingChildTwo form h2 {

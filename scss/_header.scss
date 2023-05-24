@@ -10,6 +10,7 @@ header {
     padding: 2rem;
     h1 {
       color: #fff;
+      font-size: 23px;
       span {
         color: $spanColor;
       }
@@ -45,17 +46,20 @@ header {
 @media (min-width: 769px) {
   header {
     background: $header_background;
+    // gap: 10rem;
     display: flex;
     flex-direction: row;
-    padding: 0 13rem;
     align-items: center;
-
+    justify-content: space-between;
     .main_header {
-      max-width: 100%;
+      // max-width: 100%;
       display: flex;
-      justify-content: space-between;
-      padding: 2rem;
-
+      width: fit-content;
+      // justify-content: space-between;
+      // padding: 2rem;
+      h1 {
+        font-size: 30px;
+      }
       #image {
         display: none;
       }
@@ -92,7 +96,7 @@ header {
     background: $header_background;
     display: flex;
     flex-direction: row;
-    padding: 0 5rem;
+    padding: 0 1.5rem;
     align-items: center;
 
     .main_header {
@@ -100,7 +104,9 @@ header {
       display: flex;
       justify-content: space-between;
       padding: 2rem 0;
-
+      h1 {
+        font-size: 25px;
+      }
       #image {
         display: none;
       }

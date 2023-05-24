@@ -30,19 +30,23 @@
 }
 
 //Laptop Responsive
-@media (min-width: 769px) {
+@media (min-width: 577px) and (min-width: 769px) {
   .subscribeHeader {
-    padding: 3rem 10rem;
+    padding: 3rem 0;
     background-color: #304149;
     text-align: center;
+    justify-content: center;
     display: flex;
-    justify-content: space-around;
+    gap: 4rem;
 
     p {
       color: #fff;
       font-size: 25px;
       font-weight: 400;
-      margin: 1rem 0;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      // margin: 1rem 0;
     }
     fieldset {
       display: flex;
@@ -73,15 +77,16 @@
 //Tablet Responsive
 @media (min-width: 577px) and (max-width: 768px) {
   .subscribeHeader {
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 1.5rem;
     background-color: #304149;
-    text-align: center;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 
     p {
       color: #fff;
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 400;
       margin: 1rem 0;
     }
