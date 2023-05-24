@@ -328,7 +328,7 @@ header nav ul li:after {
   }
 }
 .subscribeHeader {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   background-color: #304149;
   text-align: center;
 }
@@ -364,9 +364,11 @@ header nav ul li:after {
 
 @media (min-width: 577px) and (min-width: 769px) {
   .subscribeHeader {
-    padding: 3rem 0;
+    padding: 2rem 0;
     background-color: #304149;
-    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -415,25 +417,30 @@ header nav ul li:after {
 }
 @media (min-width: 577px) and (max-width: 768px) {
   .subscribeHeader {
-    padding: 1.5rem 1.5rem;
+    padding: 2rem 0;
     background-color: #304149;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 4rem;
   }
   .subscribeHeader p {
     color: #fff;
-    font-size: 16px;
-    font-weight: 400;
-    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: 300;
+    height: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .subscribeHeader fieldset {
     display: -webkit-box;
@@ -444,9 +451,9 @@ header nav ul li:after {
   }
   .subscribeHeader fieldset input {
     padding: 0.5rem 2px;
-    width: 250px;
+    width: 300px;
     outline: none;
-    font-size: 16px;
+    font-size: 19px;
   }
   .subscribeHeader fieldset button {
     background-color: #dd5024;

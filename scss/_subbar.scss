@@ -1,5 +1,5 @@
 .subscribeHeader {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   background-color: #304149;
   text-align: center;
   p {
@@ -32,9 +32,9 @@
 //Laptop Responsive
 @media (min-width: 577px) and (min-width: 769px) {
   .subscribeHeader {
-    padding: 3rem 0;
+    padding: 2rem 0;
     background-color: #304149;
-    text-align: center;
+    align-items: center;
     justify-content: center;
     display: flex;
     gap: 4rem;
@@ -77,18 +77,21 @@
 //Tablet Responsive
 @media (min-width: 577px) and (max-width: 768px) {
   .subscribeHeader {
-    padding: 1.5rem 1.5rem;
+    padding: 2rem 0;
     background-color: #304149;
-    display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    text-align: center;
+    display: flex;
+    gap: 4rem;
 
     p {
       color: #fff;
-      font-size: 16px;
-      font-weight: 400;
-      margin: 1rem 0;
+      font-size: 20px;
+      font-weight: 300;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      // margin: 1rem 0;
     }
     fieldset {
       display: flex;
@@ -96,9 +99,9 @@
       height: 3rem;
       input {
         padding: 0.5rem 2px;
-        width: 250px;
+        width: 300px;
         outline: none;
-        font-size: 16px;
+        font-size: 19px;
       }
       button {
         background-color: #dd5024;
