@@ -1,6 +1,10 @@
 //Hamburger toggling Statement
-function onClickMenu() {
-  var nav = document.getElementById("menu");
+
+const menu = document.querySelector("#image");
+let nav = document.querySelector(".menu");
+let changeImg = document.querySelector("#image");
+
+menu.addEventListener("click", function () {
   if (nav.style.display == "block") {
     nav.style.display = "none";
     console.log("hideHamburgerMenu");
@@ -8,17 +12,12 @@ function onClickMenu() {
     nav.style.display = "block";
     console.log("displayHamburgerMenu");
   }
-}
 
-//Changing img src toggle Statement
-
-function swapImg() {
-  var img = document.getElementById("image");
-  if (img.src.match("./icons8-menu-rounded-30.png")) {
-    img.src = "././image/cancel.png";
+  if (changeImg.src.match("./icons8-menu-rounded-30.png")) {
+    changeImg.src = "././image/cancel.png";
     console.log("otherImg");
   } else {
-    img.src = "././image/icons8-menu-rounded-30.png";
+    changeImg.src = "././image/icons8-menu-rounded-30.png";
     console.log("mainImg");
   }
-}
+});
